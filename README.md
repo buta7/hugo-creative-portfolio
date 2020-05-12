@@ -28,12 +28,14 @@
 config.toml
 
 ```
-baseURL = "http://higebobo.github.io/hugo-creative-portfolio/"
+baseURL = "https://higebobo.github.io/hugo-creative-portfolio/"
 title = "Hugo Creative portfolio"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "ja"
 publishDir = "docs"
 ```
+
+> baseURLのプロトコルは例外を除いてhttpsにすること
 
 archetypesの設定
 
@@ -58,7 +60,7 @@ Githubレポジトリ作成後
     $ git commit -m 'init'
     $ git push -u origin master
 
-Github>Settings>Gighub Pages>Source
+Github>Settings>Gighub Pages>Source>master branch/docs folder
 
 ## 使い方
 
