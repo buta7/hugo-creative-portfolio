@@ -43,7 +43,7 @@ languageCode = "ja"
 publishDir = "docs"
 ```
 
-> baseURLのプロトコルは例外を除いてhttpsにすること
+> github pagesやnetlifyで使う場合はbaseURLのプロトコルはhttpsにすること
 
 archetypesの設定
 
