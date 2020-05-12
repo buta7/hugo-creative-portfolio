@@ -53,9 +53,12 @@ weight = 10
 Githubレポジトリ作成後
 
     $ git remote add origin git@github.com:higebobo/hugo-creative-portfolio.git
+    $ hugo
     $ git add -A
     $ git commit -m 'init'
     $ git push -u origin master
+
+Github>Settings>Gighub Pages>Source
 
 ## 使い方
 
