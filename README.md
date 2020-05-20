@@ -72,6 +72,14 @@ git push -u origin master
 
 Github>Settings>Gighub Pages>Source>master branch/docs folder
 
+## 既存のレポジトリからクローンする場合
+
+```shell
+git clone git@github.com:higebobo/hugo-creative-portfolio.git higebobo-creative-portfolio
+cd higebobo-creative-portfolio
+git submodule update --init --recursive
+```
+
 ## 使い方
 
 ### 投稿
