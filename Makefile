@@ -8,13 +8,12 @@ SHELL := /bin/bash
 
 HOST=http://localhost
 PORT=1313
+BUILD_DIR=public
 
 # .env
 ifneq ("$(wildcard ./.env)","")
   include ./.env
 endif
-
-PORT=1313
 
 run: ## Run server
 	@hugo server --bind="0.0.0.0" --baseUrl="${HOST}" --port=${PORT} --buildDrafts --watch
@@ -25,12 +24,14 @@ run-without-draft: ## Run server without draft posts
 build: clean ## Build static html
 	@hugo
 
-deploy: ## Deploy on Github Pages
-	@sh deploy.sh
+deploy: build ## Deploy on Github Pages
+	@git add .
+	@git commit -m 'modified'
+	@git push origin master
 
 clean: ## Clean old files
 	@hugo --cleanDestinationDir
-	rm -fr docs/*
+	rm -fr ${BUILD_DIR}
 
 help: ## Print this help
 	@echo 'Usage: make [target]'

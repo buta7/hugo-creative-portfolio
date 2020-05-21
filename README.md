@@ -40,7 +40,7 @@ baseURL = "https://higebobo.github.io/hugo-creative-portfolio/"
 title = "Hugo Creative portfolio"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "ja"
-publishDir = "docs"
+#publishDir = "docs"
 ```
 
 > github pagesやnetlifyで使う場合はbaseURLのプロトコルはhttpsにすること
@@ -70,7 +70,12 @@ git commit -m 'init'
 git push -u origin master
 ```
 
-Github>Settings>Gighub Pages>Source>master branch/docs folder
+## Github Actionsの利用
+
+* .github/workflows/gh-pages.yamlを作成
+    * ソースはmasterブランチ
+    * 出力はpublicフォルダの内容をgh-pagesブランチ
+        * Github>Settings>Gighub Pages>Source>gh-pages branch
 
 ## 既存のレポジトリからクローンする場合
 
@@ -101,18 +106,7 @@ vi content/portfolio/work12.md
 
 ```shell
 vi content/posts/2020/05/helloworld.md
-...
 draft: false
-...
-```
-
-## Github連携
-
-config.tomlに以下の設定があることを確認
-
-```toml
-baseURL = "https://higebobo.github.io/hugo-creative-portfolio/"
-publishDir = "docs"
 ```
 
 公開(githubにプッシュ)
