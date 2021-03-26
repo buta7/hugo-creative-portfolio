@@ -1,4 +1,4 @@
-baseURL = "https://higebobo.github.io/hugo-creative-portfolio/"
+baseURL = "https://buta7.github.io/hugo-creative-portfolio/"
 title = "Hugo Creative portfolio"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "ja"
@@ -13,7 +13,7 @@ googleAnalytics = ""
   # Use custom.css for your custom styling
   style = "default"
   description = "Describe your website"
-  copyright = "&copy;2020 Higebobo"
+  copyright = "&copy;2020 Buta7"
   sidebarAbout = [
     "I am a creative illustrator and graphic designer with more than 10 years of experience.",
     "Originally from Toronto, currently based in London."
